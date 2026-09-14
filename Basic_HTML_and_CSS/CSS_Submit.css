@@ -1,0 +1,15 @@
+ol {
+    list-style-type: upper-roman;
+    background-color:aliceblue;
+    color:black;
+}
+
+ul {
+    list-style-type: square;
+    background-color: azure;
+    color: slategray;
+}
+
+.Shadow_Text {
+    text-shadow: 2px 3px 5px grey;
+}
