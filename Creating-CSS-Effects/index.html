@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Creating Effects with CSS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="drop">
+                    <a href="#">Images</a>
+                    <div class="rollover-menu">
+                        <a href="#image1">Image 1</a>
+                        <a href="#image2">Image 2</a>
+                        <a href="#image3">Image 3</a>
+                        <a href="#image4">Image 4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--Images-->
+        <section>
+            <!--Image 1-->
+            <div class="img-container" id="image1">
+                <img src="./images/Picos-de-Europa-picu-uriellu.jpg">
+                <div class="overlay"></div>
+            </div>
+            <!--Image 2-->
+            <div class="img-container" id="image2">
+                <img src="./images/Picos-de-Europa-Lag-de-Enol.jpg" class="zoom">
+            </div>
+            <!--Image 3-->
+            <div class="img-container" id="image3">
+                <div class="circle">
+                    <img src="./images/Picos-de-Europa-Torre-de-Cerredo.jpg">
+                </div>
+           </div>
+            <!--Image 4-->
+            <div class="img-container" id="image4">
+                <img src="./images/Picos-de-Europa.jpg" class="rot">
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+            <div class="footer-text">
+                <p>The Tech Academy &copy;</p>
+            </div>
+        </footer>
+    </body>
+</html>
