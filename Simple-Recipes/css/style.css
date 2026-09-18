@@ -417,3 +417,9 @@ input[type="submit"]:hover{
     text-align: center;
     padding: 20px;
 }
+
+@media screen and (max-width:1200px){
+    #about {
+        width:350px;
+    }
+}
