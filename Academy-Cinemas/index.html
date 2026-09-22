@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Academy Cinemas</title>
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CUSTOM CSS listed last to overwrite bootstrap css rules -->
+    <link href="css/custom.css" rel="stylesheet">
+    <!-- CUSTOM CSS for mutliple screen sizes -->
+    <link href="css/custom-css-media.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Academy Cinemas</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Now Playing
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#ben-hur">Ben Hur</a></li>
+                            <li><a class="dropdown-item" href="#stood-still">The Day the Earth Stood Still</a></li>
+                            <li><a class="dropdown-item" href="#vertigo">Vertigo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tickets">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- LOGO -->
+    <header class="row justify-content-center">
+        <img src="./images/logo.png" class="img-fluid col-lg-6" id="header-image" alt="Academy Cinemas Logo">
+    </header>
+
+    <!-- NOW PLAYING -->
+    <section>
+        <div class="container" id="now-playing">
+            <h1>Now Playing</h1>
+
+            <!-- ben hur -->
+
+            <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
+                <div class="col-lg-5 mx-auto">
+                    <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben Hur movie poster">
+                </div>
+                <div class="card col-lg-5 mx-auto">
+                    <div class="card-body">
+                        <h3 class="card-title">Ben Hur</h3>
+                        <!-- movie description -->
+                        <p class="lead">
+                            After a Jewish prince is betrayed and sent into slavery by a Roman friend in
+                            1st-century Jerusalem, he regains his freedom and comes back for revenge.
+                            <br>
+                            <br>
+                            <strong>Director:</strong> William Wyler
+                            <br>
+                            <strong>Starring:</strong> Charlton Heston | Jack Hawkins | Stephen Boyd
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <!-- BEN HUR SHOW TIMES -->
+                        <h4>Show Times</h4>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">10:00 AM</a>
+                                <a class="btn" href="#tickets" role="button">11:30 AM</a>
+                                <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">2:30 PM</a>
+                                <a class="btn" href="#tickets" role="button">4:50 PM</a>
+                                <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 2nd movie -->
+
+            <div class="d-flex flex-row flex-wrap spacer" id="stood-still">
+                <div class="col-lg-5 mx-auto">
+                    <img src="images/earth-stood-still.jpg" class="img-fluid"
+                        alt="The day the earth stood still movie poster">
+                </div>
+                <div class="card col-lg-5 mx-auto">
+                    <div class="card-body">
+                        <h3 class="card-title">The Day the Earth Stood Still</h3>
+                        <!-- movie description -->
+                        <p class="lead">
+                            An alien lands in Washington, D.C. and tells the people of Earth that they must
+                            live peacefully or be destroyed as a danger to other planets.
+                            <br>
+                            <br>
+                            <strong>Director:</strong> Robert Wise
+                            <br>
+                            <strong>Starring:</strong> Michael Rennie | Patricia Neal | Hugh Marlowe
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <!-- 2nd SHOW TIMES -->
+                        <h4>Show Times</h4>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">10:00 AM</a>
+                                <a class="btn" href="#tickets" role="button">11:30 AM</a>
+                                <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">2:30 PM</a>
+                                <a class="btn" href="#tickets" role="button">4:50 PM</a>
+                                <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- vertigo -->
+
+            <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
+                <div class="col-lg-5 mx-auto">
+                    <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo movie poster">
+                </div>
+                <div class="card col-lg-5 mx-auto">
+                    <div class="card-body">
+                        <h3 class="card-title">Vertigo</h3>
+                        <!-- movie description -->
+                        <p class="lead">
+                            A former San Francisco police detective juggles wrestling with
+                            his personal demons and becoming obsessed with the hauntingly
+                            beautiful woman he has been hired to trail, who may be deeply disturbed.
+                            <br>
+                            <br>
+                            <strong>Director:</strong> Alfred Hitchcock
+                            <br>
+                            <strong>Starring:</strong> James Stewart | Kim Novak | Barbara Bel Geddes
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <!-- Vertigo SHOW TIMES -->
+                        <h4>Show Times</h4>
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">10:00 AM</a>
+                                <a class="btn" href="#tickets" role="button">11:30 AM</a>
+                                <a class="btn" href="#tickets" role="button">1:10 PM</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <a class="btn" href="#tickets" role="button">2:30 PM</a>
+                                <a class="btn" href="#tickets" role="button">4:50 PM</a>
+                                <a class="btn" href="#tickets" role="button">8:00 PM</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TICKETS -->
+    <section>
+        <div class="container spacer" id="tickets">
+            <h1>Tickets</h1>
+            <div class="d-flex flex-row flex-wrap">
+                <!-- movie selecion -->
+                <div class="col">
+                    <div class="card text-center">
+                        <h5 class="card-title">Please select a movie</h5>
+                        <div class="card-body">
+                            <select class="form-select" aria-label="Movie title selection">
+                                <option selected>Select movie</option>
+                                <option value="1">Ben Hur</option>
+                                <option value="2">The Day the Earth Stood Still</option>
+                                <option value="3">Vertigo</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- show times selection -->
+                <div class="col">
+                    <div class="card text-center">
+                        <h5 class="card-title">Please select a show time</h5>
+                        <div class="card-body">
+                            <select class="form-select" aria-label="Movie time selection">
+                                <option selected>Show times</option>
+                                <option value="1">10:00 AM</option>
+                                <option value="2">11:30 AM</option>
+                                <option value="3">1:10 PM</option>
+                                <option value="4">2:30 PM</option>
+                                <option value="5">4:50 PM</option>
+                                <option value="6">8:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nr of tickets -->
+                <div class="col">
+                    <div class="card text-center">
+                        <h5 class="card-title">Please select number of tickers</h5>
+                        <div class="card-body">
+                            <input type="number" id="quantity" value="1" step="1">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- buy tickets button -->
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button type="submit" class="btn yellow-btn">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section>
+        <div class="container" id="contact">
+            <h1>Contact Us!</h1>
+            <div class="row gy-2">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+                <div>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div>
+                    <textarea type="textarea" class="form-control" rows="3"
+                        placeholder="Write us a message..."></textarea>
+                    <button type="submit" class="btn yellow-btn" id="contact-submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <section>
+        <div class="container-fluid">
+            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3">
+                <div class="col-md-4 d-flex flex-column align-items-center">
+                    <p class="mb-2 footer-text">
+                        &copy; 2026 Academy Cinemas
+                    </p>
+
+                    <div class="instagram-follow">
+                        <img src="./images/8bf0105f601eeeeffe784bf24bd52d0e.png" alt="Instagram logo">
+                        <span>Follow us on Instagram!</span>
+                    </div>
+                </div>
+
+                <img src="./images/logo.png" class="col-md-4 footer-img" alt="Academy Cinemas Logo">
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item">
+                        <a href="#now-playing" class="nav-link px-2 footer-text">Now Playing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tickets" class="nav-link px-2 footer-text">Tickets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link px-2 footer-text">Contact</a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+    </section>
+</body>
+
+</html>
