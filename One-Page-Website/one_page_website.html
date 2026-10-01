@@ -8,6 +8,7 @@
     <meta name="keywords" content="HTML, Mountains, Hiking, Spain">
     <meta name="author" content="Joanna">
     <link rel="stylesheet" href="css/one-page-website.css">
+    <script src="js/one-page-website.js" defer></script>
 </head>
 
 
@@ -70,29 +71,37 @@
         <div id="hikes">
             <h3><u>Top Day Hikes</u></h3>
             <ul class="center">
-                <li><h4>Ruta del Cares (Poncebos to Caín):</h4> <br>
+                <li>
+                    <h4>Ruta del Cares (Poncebos to Caín):</h4> <br>
                     Difficulty: Moderate<br>
                     Distance: ~21–24 km (out-and-back)<br>
                     Details: Follows a breathtaking path cut into the cliffs alongside the Cares River. It is relatively
-                    flat but features steep drop-offs and narrow stretches.</li>
+                    flat but features steep drop-offs and narrow stretches.
+                </li>
                 <br>
-                <li><h4>Lakes of Covadonga & Mirador de Ordiales:</h4><br>
+                <li>
+                    <h4>Lakes of Covadonga & Mirador de Ordiales:</h4><br>
                     Difficulty: Easy to Moderate<br>
                     Distance: 6 to 10 km<br>
                     Details: A gentle loop past glacial lakes (Enol and Ercina) where cows graze freely. You can extend
-                    the route upward to the Ordiales Scenic Balcony for panoramic views over the valleys.</li>
+                    the route upward to the Ordiales Scenic Balcony for panoramic views over the valleys.
+                </li>
                 <br>
-                <li><h4>Fuente Dé to Áliva Valley:</h4><br>
+                <li>
+                    <h4>Fuente Dé to Áliva Valley:</h4><br>
                     Difficulty: Easy / Low-effort, high-reward<br>
                     Distance: Varies (~14 km if walking down)<br>
                     Details: Ride the Fuente Dé Cable Car up to high-altitude crags, then enjoy a scenic, steady descent
-                    back down through green pastures and the Áliva valley.</li>
+                    back down through green pastures and the Áliva valley.
+                </li>
                 <br>
-                <li><h4>Refugio Vega de Urriellu</h4> (from Pandébano):<br>
+                <li>
+                    <h4>Refugio Vega de Urriellu</h4> (from Pandébano):<br>
                     Difficulty: High / Challenging<br>
                     Distance: ~13 km round trip<br>
                     Details: Ascends to the base of the iconic Naranjo de Bulnes (Picu Urriellu) tower, a legendary spot
-                    for climbers and high-altitude trekkers.</li>
+                    for climbers and high-altitude trekkers.
+                </li>
             </ul>
             </p>
         </div>
@@ -102,11 +111,76 @@
     <section>
         <div id="images">
             <h3><u>Photos from the Area</u></h3>
-            <img src="./images/Picos-de-Europa-Torre-de-Cerredo.jpg" alt="View of the mountains at sunrise"
-                class="center"><br>
-            <img src="./images/Picos-de-Europa-Lag-de-Enol.jpg" alt="View of a lake" class="center"><br>
-            <img src="./images/Picos-de-Europa.jpg" alt="Cow with horns in the mountain landscape" class="center"><br>
-            <img src="./images/potes-bridge.jpg" alt="Small river and bridge in a historic town" class="center"><br>
+            <div class="row">
+                <div class="column">
+                    <img src="./images/1_small.jpg" alt="View of the mountains at sunrise"
+                        onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./images/2_small.jpg" alt="View of a lake"
+                        onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./images/3_small.jpg" alt="Cow with horns in the mountain landscape"
+                        onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="column">
+                    <img src="./images/4_small.jpg" alt="Small river and bridge in a historic town"
+                        onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+            </div>
+
+            <div id="img-modals" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+
+                    <div class="img-slides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="./images/Picos-de-Europa-Torre-de-Cerredo.jpg" style="width:100%">
+                    </div>
+
+                    <div class="img-slides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="./images/Picos-de-Europa-Lag-de-Enol.jpg" style="width:100%">
+                    </div>
+
+                    <div class="img-slides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="./images/Picos-de-Europa.jpg" style="width:100%">
+                    </div>
+
+                    <div class="img-slides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="./images/potes-bridge.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- Caption text -->
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <!-- Thumbnail image controls -->
+                    <div class="column">
+                        <img class="demo" src="./images/1_small.jpg" onclick="currentSlide(1)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/2_small.jpg" onclick="currentSlide(2)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/3_small.jpg" onclick="currentSlide(3)">
+                    </div>
+
+                    <div class="column">
+                        <img class="demo" src="./images/4_small.jpg" onclick="currentSlide(4)">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -114,7 +188,8 @@
     <section>
         <div id="video">
             <h3><u>Video taken around Picu Urriellu</u></h3>
-            <iframe height="1200" src="./videos/PXL_20260910_065829017.mp4" class="center" alt="Video from rugged mountains"></iframe>
+            <iframe height="1200" src="./videos/PXL_20260910_065829017.mp4" class="center"
+                alt="Video from rugged mountains"></iframe>
         </div>
     </section>
 
