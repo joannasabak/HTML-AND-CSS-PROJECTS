@@ -12,6 +12,7 @@ for (var i = 0; i < btns.length; i++) {
     btns[i].onclick = function (event) {
         modal = document.querySelector(event.target.getAttribute("href"));
         modal.style.display = "block";
+        
         //set modal timeout to 10s
         ModalTimeOut = setTimeout(() => closeModal(modal), 10000);
     }
@@ -37,6 +38,7 @@ function closeModal() {
         }
     }
 }
+
 
 
 //contact form validation
