@@ -293,3 +293,26 @@ footer{
     height: 24px;
     object-fit: contain;
 }
+
+/* popovers */
+
+.star-rating {
+    width: 70%;
+}
+
+/* toast */
+
+.custom-toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* tooltip */
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--bd-violet-bg);
+  --bs-tooltip-color: var(--bs-white);
+}

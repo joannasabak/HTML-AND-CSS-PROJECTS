@@ -15,11 +15,6 @@
 </head>
 
 <body>
-    <!--BOOTSTRAP JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
@@ -66,7 +61,10 @@
 
             <div class="d-flex flex-row flex-wrap spacer" id="ben-hur">
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben Hur movie poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images/four-and-half-stars.png" data-bs-title="Ben Hur Rating">
+                        <img src="images/ben-hur.jpg" class="img-fluid" alt="Ben Hur movie poster">
+                    </span>
                 </div>
                 <div class="card col-lg-5 mx-auto">
                     <div class="card-body">
@@ -112,8 +110,11 @@
 
             <div class="d-flex flex-row flex-wrap spacer" id="stood-still">
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/earth-stood-still.jpg" class="img-fluid"
-                        alt="The day the earth stood still movie poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images/four-stars.png" data-bs-title="The Day the Earth Stood Still Rating">
+                        <img src="images/earth-stood-still.jpg" class="img-fluid"
+                            alt="The day the earth stood still movie poster">
+                    </span>
                 </div>
                 <div class="card col-lg-5 mx-auto">
                     <div class="card-body">
@@ -159,7 +160,10 @@
 
             <div class="d-flex flex-row flex-wrap spacer" id="vertigo">
                 <div class="col-lg-5 mx-auto">
-                    <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo movie poster">
+                    <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus"
+                        data-bs-img="images\four-and-half-stars.png" data-bs-title="Vertigo Rating">
+                        <img src="images/vertigo.jpg" class="img-fluid" alt="Vertigo movie poster">
+                    </span>
                 </div>
                 <div class="card col-lg-5 mx-auto">
                     <div class="card-body">
@@ -216,7 +220,7 @@
                     <div class="card text-center">
                         <h5 class="card-title">Please select a movie</h5>
                         <div class="card-body">
-                            <select class="form-select" aria-label="Movie title selection">
+                            <select id="movieSelect" class="form-select" aria-label="Movie title selection">
                                 <option selected>Select movie</option>
                                 <option value="1">Ben Hur</option>
                                 <option value="2">The Day the Earth Stood Still</option>
@@ -231,7 +235,7 @@
                     <div class="card text-center">
                         <h5 class="card-title">Please select a show time</h5>
                         <div class="card-body">
-                            <select class="form-select" aria-label="Movie time selection">
+                            <select id="timeSelect" class="form-select" aria-label="Movie time selection">
                                 <option selected>Show times</option>
                                 <option value="1">10:00 AM</option>
                                 <option value="2">11:30 AM</option>
@@ -259,11 +263,26 @@
             <!-- buy tickets button -->
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <button type="submit" class="btn yellow-btn">Buy Tickets</button>
+                    <!-- Button with a bootstrap tooltip -->
+                    <button id="tooltip" type="submit" class="custom-tooltip btn yellow-btn" onClick="buyTickets()" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-title="Click here to buy your tickets">
+                        Buy Tickets
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- BOOTSTRAP TOAST -->
+    <div id="toastDisplay" class="custom-toast toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Ticket Information</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div id="toastBody" class="toast-body">
+            <!-- selected options will display here -->
+        </div>
+    </div>
 
     <!-- CONTACT FORM -->
     <section>
@@ -319,6 +338,13 @@
             </footer>
         </div>
     </section>
+
+    <!--BOOTSTRAP JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="javascript/javascript.js"></script>
 </body>
 
 </html>
