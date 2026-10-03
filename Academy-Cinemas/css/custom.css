@@ -5,23 +5,24 @@
 /* creates global css variables that can be reused throughout the file */
 
 :root {
-    --main-color: rgb(126,133,130);
-    --main-color-accent: rgb(237,192,3);
-    --main-color-transparent: rgba(126,133,130, 0.8);
-    --secondary-color: rgba(128,0,0, 0.9);
-    --accent-color: rgb(36,36,36);
-    --accent-text-color: rgb(255,255,255);
+    --main-color: rgb(126, 133, 130);
+    --main-color-accent: rgb(237, 192, 3);
+    --main-color-transparent: rgba(126, 133, 130, 0.8);
+    --secondary-color: rgba(128, 0, 0, 0.9);
+    --accent-color: rgb(36, 36, 36);
+    --accent-text-color: rgb(255, 255, 255);
     --main-font-family: "Passion One", cursive;
     --secondary-font-family: "Yesteryear", cursive;
 }
 
-html{
+html {
     scroll-padding-top: 100px;
 }
 
 body {
     background-image: url(../images/theater-curtains.jpg);
-    background-size: 100% 120%; /*100% horizontall and 120% vertically*/
+    background-size: 100% 120%;
+    /*100% horizontall and 120% vertically*/
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -31,7 +32,7 @@ body {
 
 .navbar {
     background-color: var(--secondary-color);
-    border-bottom: 5px solid rgb(98,0,0);
+    border-bottom: 5px solid rgb(98, 0, 0);
     height: 100px;
 }
 
@@ -54,15 +55,15 @@ body {
 
 .nav-link:hover {
     color: var(--main-color-transparent);
-    text-shadow: 0 0 3px rbga(255,123,0, 0.6);
+    text-shadow: 0 0 3px rbga(255, 123, 0, 0.6);
 }
 
-.nav-link:focus{
+.nav-link:focus {
     color: var(--accent-text-color);
-    text-shadow: 0 0 3px rgba(255,123,0, 0.6);
+    text-shadow: 0 0 3px rgba(255, 123, 0, 0.6);
 }
 
-.navbar-expand-lg .navbar-nav .nav-link{
+.navbar-expand-lg .navbar-nav .nav-link {
     padding-left: 1.5rem;
 }
 
@@ -71,54 +72,70 @@ body {
 .dropdown-menu {
     border: none;
     border-radius: 0;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.4);
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.4);
     background-color: var(--main-color);
     padding: 0px;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: var(--accent-color);
     font-family: var(--main-font-family);
     text-align: center;
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgb(117,77,13);
+    border-bottom: 2px solid rgb(117, 77, 13);
 }
 
-.dropdown-item:focus, .dropdown-item:hover{
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: var(--accent-text-color);
     background-color: var(--main-color);
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none;
     transition: 0.5 ease;
 }
 
-.navbar-toggler:focus{
-    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98,0,0);
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) rgb(98, 0, 0);
     transition: 0.5s ease;
 }
 
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb%28237, 192, 3%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* shrink on scroll */
+
+.nav-shrink {
+    height:70px;
+    transition: 0.5s ease;
+}
+
+.navbar-collapse {
+    transition: margin-top 0.5s ease;
 }
 
 /* header image */
 
-#header-image{
+#header-image {
     padding-top: 150px;
 }
 
-h1, h3, h4, p, h5 {
+h1,
+h3,
+h4,
+p,
+h5 {
     cursor: default;
 }
 
 h1 {
     font-family: var(--main-font-family);
     color: var(--main-color-accent);
-    text-shadow: 0 0 10px rgb(0,0,0);
+    text-shadow: 0 0 10px rgb(0, 0, 0);
     text-align: center;
     font-size: 100px;
 }
@@ -127,44 +144,44 @@ h3 {
     font-family: var(--main-font-family);
 }
 
-h4{
+h4 {
     font-family: var(--secondary-font-family);
     font-size: 25px;
 }
 
-h5{
+h5 {
     font-family: var(--main-font-family);
     font-size: 30px;
 }
 
-strong{
+strong {
     font-weight: 600;
 }
 
-img{
+img {
     border-radius: 5px;
 }
 
-.container{
+.container {
     padding: 100px;
 }
 
-.card{
+.card {
     border: 5px solid var(--main-color);
     border-radius: 5px;
-    background-color: rgba(255,255,255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-.card-body{
+.card-body {
     padding-top: 30px;
     padding-left: 20px;
 }
 
-.spacer{
+.spacer {
     padding-top: 50px;
 }
 
-.btn{
+.btn {
     background-color: var(--main-color);
     border-radius: 20px;
     margin-top: 5px;
@@ -175,20 +192,20 @@ img{
     font-size: 18px;
 }
 
-.btn:focus{
+.btn:focus {
     border-color: transparent;
     background-color: var(--main-color);
     color: var(--accent-text-color);
 }
 
-.btn:hover{
+.btn:hover {
     border-color: transparent;
     background-color: var(--main-color);
     color: var(--accent-text-color)
 }
 
 /* added styling to yellow buttons */
-.yellow-btn{
+.yellow-btn {
     background-color: var(--main-color-accent);
     padding: 20px;
     border-radius: 40px;
@@ -199,7 +216,8 @@ img{
     margin-bottom: 40px;
 }
 
-.yellow-btn:hover, .yellow-btn:focus{
+.yellow-btn:hover,
+.yellow-btn:focus {
     background-color: var(--main-color-accent);
     color: var(--accent-text-color);
 
@@ -207,27 +225,27 @@ img{
 
 /* ticket card section */
 
-#tickets .card{
-    padding:40px;
+#tickets .card {
+    padding: 40px;
     height: 250px;
     margin-right: 20px;
     background-color: white;
 }
 
-.form-select{
+.form-select {
     font-family: var(--main-font-family);
     font-size: 20px;
     border: 3px solid var(--main-color);
     transition: border-color 0.5s ease-in;
 }
 
-.form-select:focus{
+.form-select:focus {
     border-color: var(--secondary-color);
     box-shadow: none;
     transition: 0.5s ease-in;
 }
 
-input[type="number"]{
+input[type="number"] {
     width: 70px;
     padding: 5px;
     font-family: var(--main-font-family);
@@ -237,24 +255,24 @@ input[type="number"]{
     transition: border-color 0.5s ease-in;
 }
 
-input[type="number"]:focus{
+input[type="number"]:focus {
     border: 3px solid var(--secondary-color);
     transition: 0.5s ease-in;
     outline: 0;
 }
 
-.form-control{
+.form-control {
     border: 3px solid var(--main-color);
     transition: 1s ease;
 }
 
-.form-control:focus{
+.form-control:focus {
     color: #212529;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0px .25rem var(--main-color);
 }
 
-#contact-submit{
+#contact-submit {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -262,24 +280,24 @@ input[type="number"]:focus{
 
 /* footer */
 
-footer{
+footer {
     border-top: 5px solid var(--main-color);
-    background-color: rgba(0,0,0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     margin: 0px -15px 0px -15px;
 }
 
-.footer-text{
+.footer-text {
     font-family: var(--main-font-family);
     color: var(--accent-text-color);
     font-size: 30px;
 }
 
-.footer-img{
+.footer-img {
     width: auto;
     height: 130px;
 }
 
-.instagram-follow{
+.instagram-follow {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -288,7 +306,7 @@ footer{
     font-size: 25px;
 }
 
-.instagram-follow img{
+.instagram-follow img {
     width: 24px;
     height: 24px;
     object-fit: contain;
@@ -313,6 +331,6 @@ footer{
 /* tooltip */
 
 .custom-tooltip {
-  --bs-tooltip-bg: var(--bd-violet-bg);
-  --bs-tooltip-color: var(--bs-white);
+    --bs-tooltip-bg: var(--bd-violet-bg);
+    --bs-tooltip-color: var(--bs-white);
 }
